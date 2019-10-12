@@ -7,7 +7,17 @@
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  name: "app",
+  data() {
+    return {};
+  },
+  created() {
+    console.log(this.$store.state.ceshi);
+  }
+};
+</script>
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

@@ -3,6 +3,12 @@ module.exports = {
   env: {
     node: true
   },
+  /*定义全局变量，防止提示报错*/
+  globals: {
+    Vue: true,
+    VueRouter: true,
+    Vuex: true
+  },
   extends: ["plugin:vue/essential", "@vue/prettier"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
